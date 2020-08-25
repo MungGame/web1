@@ -7,6 +7,25 @@
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
+  <input type="button" name="" value="night" onclick="
+  var target = document.querySelector('body');
+  var linktarget = document.querySelector('a');
+
+  if(this.value == 'night')
+    {
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      this.value = 'day'
+      linktarget.style.color = 'white';
+    }
+    else
+    {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      this.value = 'night';
+      linktarget.style.color = 'black';
+    }
+  ">
   <div id="grid">
     <ol>
       <li><a href="1.html">HTML</a></li>
