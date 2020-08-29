@@ -3,28 +3,14 @@
 <head>
   <title>WEB1 - Welcome</title>
   <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="style.css">
+  <script src="colors.js"></script>
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
   <input type="button" name="" value="night" onclick="
-  var target = document.querySelector('body');
-  var linktarget = document.querySelector('a');
-
-  if(this.value == 'night')
-    {
-      target.style.backgroundColor = 'black';
-      target.style.color = 'white';
-      this.value = 'day'
-      linktarget.style.color = 'white';
-    }
-    else
-    {
-      target.style.backgroundColor = 'white';
-      target.style.color = 'black';
-      this.value = 'night';
-      linktarget.style.color = 'black';
-    }
+    nightdayhandler(this);
   ">
   <div id="grid">
     <ol>
