@@ -37,5 +37,10 @@
     h1{
       border-bottom: none;
     }
+    h2{
+      border-padding: none;
+      border-size: 12px;
+      color: red;
+    }
   }
 </style>
